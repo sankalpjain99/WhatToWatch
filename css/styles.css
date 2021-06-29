@@ -1,0 +1,51 @@
+
+.outer-box{
+    display: inline-block;
+    padding: 5% 10%;
+    width: 100%;
+}
+
+
+/* --------------SearchBar Section--------------  */
+
+#search{
+    width: 100%;
+    text-align: center;
+}
+
+#movieName{
+    width: 50%;
+}
+
+#srcBtn{
+    width: 10%;
+} 
+
+
+/* --------------Movies Section--------------  */
+
+#content{
+    width: 100%;
+    padding: 0 5% 5%;
+}
+
+#movies{
+    display: inline-block;
+}
+
+.movieDiv{
+    padding: 1%;
+}
+
+.moviePoster{
+    width: 200px;
+    height: 300px;
+    margin-bottom: 5%;
+}
+
+.movieDetails{
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}

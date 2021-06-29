@@ -20,11 +20,17 @@ function appendData(data){
             var div = document.createElement("div");
             var moviePoster = document.createElement("img");
             var movieDetails = document.createElement("div");
-            moviePoster.setAttribute("src", data[i].Poster);
+            if(data[i].Poster == "N/A"){
+                moviePoster.setAttribute("src", "images/poster_default.jpg");
+            } else{
+                moviePoster.setAttribute("src", data[i].Poster);
+            }
+            moviePoster.setAttribute("class", "moviePoster");
             movieDetails.innerHTML = data[i].Title + ", " + data[i].Year;
+            movieDetails.setAttribute("class", "movieDetails");
             div.appendChild(moviePoster);
             div.appendChild(movieDetails);
-            div.setAttribute("onclick", "openMovie()");
+            div.setAttribute("class", "movieDiv")
             movieDiv.appendChild(div);
         }
     } else{
